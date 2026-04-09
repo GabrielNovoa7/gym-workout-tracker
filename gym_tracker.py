@@ -1,4 +1,5 @@
 import sqlite3 as sql
+import tkinter
 
 #create a connection to connect to a database
 connection = sql.connect("gym.db")
@@ -7,12 +8,23 @@ cursor = connection.cursor()
 # open the schema file
 with open("schema.sql", "r") as file:
     sql_script = file.read()
-
 # execute all SQL commands inside schema.sql
 cursor.executescript(sql_script)
-
 # save changes
 connection.commit()
-
 # close connection
 connection.close()
+
+#create the pop-up window
+window = tkinter.Tk()
+#create a message widget
+message = tkinter.Label(window, text="Workout Tracker")
+#display text
+message.pack()
+
+# keep the window displaying
+try:
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
+finally:
+    window.mainloop()#keep as last command to keep the tk window open

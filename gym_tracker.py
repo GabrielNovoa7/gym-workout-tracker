@@ -1,5 +1,6 @@
 import sqlite3 as sql
 import tkinter
+from tkinter import ttk
 
 #create a connection to connect to a database
 connection = sql.connect("gym.db")
@@ -17,10 +18,16 @@ connection.close()
 
 #create the pop-up window
 window = tkinter.Tk()
+#sets the size of the popup window and the position of the window
+# geometry(width x height (+-)x (+-)y)
+window.geometry("1600x1400+50+50")
+#create a title
+window.title("Workout Tracker Demo")
 #create a message widget
-message = tkinter.Label(window, text="Workout Tracker")
+message = tkinter.Label(window, text="Workout Tracker",font=("Segoe UI", 50))
 #display text
 message.pack()
+window.iconbitmap('./dumbell_image.ico')
 
 # keep the window displaying
 try:

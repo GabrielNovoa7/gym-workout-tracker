@@ -1,0 +1,17 @@
+# ignore Microsoft Word documents
+*.docx
+
+# ignore temporary Word files
+~$*.docx
+
+# python cache files
+__pycache__/
+*.pyc
+
+# environment folders
+venv/
+.env/
+
+# OS files
+.DS_Store
+Thumbs.db

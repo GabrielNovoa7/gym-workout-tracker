@@ -1,6 +1,7 @@
 # Gym Workout Data Analyzer
 
 ## Overview
+
 The Gym Workout Data Analyzer is a Python-based project that processes and analyzes workout data exported from a fitness tracking application. The program uses data science libraries to transform raw workout logs into meaningful insights about exercise habits, muscle group balance, and performance trends over time.
 
 This project demonstrates practical skills in data analysis, data cleaning, and visualization using real-world data.
@@ -10,12 +11,14 @@ The goal of this project is to build a useful tool that provides insight into wo
 ## Features
 
 ### Data Processing
+
 - Loads workout data from CSV files
 - Cleans and standardizes dataset values
 - Handles missing or inconsistent data
 - Organizes exercise information into structured formats
 
 ### Data Analysis
+
 - Calculates total workout volume
 - Identifies most frequently performed exercises
 - Determines most trained muscle groups
@@ -24,12 +27,14 @@ The goal of this project is to build a useful tool that provides insight into wo
 - Generates summary statistics using numerical analysis
 
 ### Data Visualization
+
 - Produces charts that illustrate workout trends
 - Displays distribution of training across muscle groups
 - Visualizes exercise progress over time
 - Highlights patterns in workout frequency
 
 ### Program Structure
+
 - Organized into modular components for readability
 - Uses structured functions for analysis tasks
 - Designed to be extendable for future improvements
@@ -39,11 +44,13 @@ The goal of this project is to build a useful tool that provides insight into wo
 Python
 
 Libraries:
+
 - pandas
 - NumPy
 - matplotlib
 
 Concepts:
+
 - data structures (lists, dictionaries)
 - file handling
 - data cleaning and transformation
@@ -93,17 +100,21 @@ These insights help evaluate workout consistency and identify strengths or imbal
 
 GymWorkoutDataAnalyzer
 
-data  
-- contains CSV workout dataset  
+data
 
-src  
-- contains program logic and analysis components  
+- contains CSV workout dataset
 
-main program file  
-- runs analysis and generates output  
+src
 
-README.md  
-- project documentation  
+- contains program logic and analysis components
+
+main program file
+
+- runs analysis and generates output
+
+README.md
+
+- project documentation
 
 ## Future Improvements
 
